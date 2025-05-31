@@ -2,7 +2,6 @@ import ArrowRightLine from "../icons/ArrowRightLine";
 import ArrowRight from "../icons/ArrowRight";
 import HeroGraphic from "../../assets/graphics/HeroGraphic.webp";
 
-
 const Hero = () => {
   return (
     <div className="m-auto grid max-w-[90rem] grid-cols-[5fr_4fr] items-center gap-x-18 px-24 py-42">
