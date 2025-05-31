@@ -1,5 +1,14 @@
+import Page from "./components/sections/page";
+import Header from "./components/sections/Header";
+import Navigation from "./components/sections/Navigation";
+
 function App() {
-  return <h1>Hello world!</h1>;
+  return <Page>
+    <Header>
+      <Navigation />
+    </Header>
+    <footer>Footer content</footer>
+  </Page>;
 }
 
 export default App;
