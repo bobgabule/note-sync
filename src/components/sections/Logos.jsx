@@ -2,7 +2,7 @@ import { logos } from "../../utils/content"
 
 const Logos = () => {
   return (
-    <section className="bg-gradient-to-top">
+    <section className="bg-gradient-to-top -mt-1">
       <div className="m-auto max-w-[90rem] px-24 py-28">
         <p className="text-primary-50 m-auto mb-20 text-center text-xl/loose">
           Organizations powered by <span className="font-bold tracking-tight">NoteSync</span>
