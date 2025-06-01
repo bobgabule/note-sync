@@ -6,19 +6,23 @@ import Reviews from "./components/sections/Reviews";
 import Main from "./components/sections/Main";
 import Logos from "./components/sections/Logos";
 import Features from "./components/sections/Features";
+import FAQs from "./components/sections/FAQs/FAQs";
 
 function App() {
-  return <Page>
-    <Header>
-      <Navigation />
-      <Hero />
-      <Reviews />
-    </Header>
-    <Main>
-      <Logos />
-      <Features />
-    </Main>
-  </Page>;
+  return (
+    <Page>
+      <Header>
+        <Navigation />
+        <Hero />
+        <Reviews />
+      </Header>
+      <Main>
+        <Logos />
+        <Features />
+        <FAQs />
+      </Main>
+    </Page>
+  )
 }
 
 export default App;
