@@ -4,21 +4,21 @@ import Logo from "../icons/Logo";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-bottom -mt-1">
-      <div className="m-auto flex max-w-[90rem] justify-between px-24 py-32">
+      <div className="m-auto flex max-w-[90rem] justify-between px-24 py-32 max-xl:px-16 max-xl:py-24">
         <div>
           <a className="flex items-center gap-x-3" href="#">
             <Logo className="stroke-primary-500" width={4.5} alt="NoteSync logo icon" />
             <p className="text-primary-50 text-xl font-bold tracking-tight">Note<span className="text-primary-500">Sync</span></p>
           </a>
         </div>
-        <div className="grid grid-cols-[repeat(4,max-content)] gap-x-24">
+        <div className="grid grid-cols-[repeat(4,max-content)] gap-x-24 max-xl:gap-x-18">
           { footerCols.map(( col ) => (
             <div key={col.id}>
-              <p className="text-primary-50 mb-8 text-xl/loose font-semibold tracking-tight">{col.category}</p>
+              <p className="text-primary-50 mb-8 text-xl/loose font-semibold tracking-tight max-xl:mb-6">{col.category}</p>
               <ul className="flex flex-col gap-y-4">
                 { col.links.map(( link, index ) => (
                   <li key={index} className="cursor-pointer">
-                    <a href="#" className="text-primary-50 hover:text-primary-500 transition-properties text-lg/8 font-light">{link}</a>
+                    <a href="#" className="text-primary-50 hover:text-primary-500 transition-properties text-lg/8 font-light max-xl:text-base/loose">{link}</a>
                   </li>
                 )) }
               </ul>

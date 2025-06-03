@@ -13,7 +13,13 @@ function ModalContextProvider({ children }) {
 }
 
 function useModalContext() {
-  return useContext( ModalContext );
+  const context = useContext(ModalContext);
+
+  if ( !context ) {
+    throw new Error("useModalContext must be used within a ModalContextProvider");
+  }
+
+  return context;
 }
 
 export { ModalContextProvider, useModalContext };
