@@ -9,23 +9,31 @@ import Features from "./components/sections/Features";
 import FAQs from "./components/sections/FAQs/FAQs";
 import Testimonials from "./components/sections/Tesimonials/Testimonials";
 import Footer from "./components/sections/Footer";
+import Modal from "./components/sections/Modal/Modal";
+import SignUpModal from "./components/sections/Modal/SignUpModal";
+import { ModalContextProvider } from "./contexts/ModalContext";
 
 function App() {
   return (
-    <Page>
-      <Header>
-        <Navigation />
-        <Hero />
-        <Reviews />
-      </Header>
-      <Main>
-        <Logos />
-        <Features />
-        <FAQs />
-        <Testimonials />
-        <Footer />
-      </Main>
-    </Page>
+    <ModalContextProvider>
+      <Page>
+        <Header>
+          <Navigation />
+          <Hero />
+          <Reviews />
+        </Header>
+        <Main>
+          <Logos />
+          <Features />
+          <FAQs />
+          <Testimonials />
+          <Footer />
+        </Main>
+        <Modal modal="sign-up">
+          <SignUpModal />
+        </Modal>
+      </Page>
+    </ModalContextProvider>
   )
 }
 

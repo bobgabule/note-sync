@@ -1,7 +1,10 @@
 import Logo from '../icons/Logo';
 import { navigationLinks } from '../../utils/content';
+import { useModalContext } from '../../contexts/ModalContext';
 
 const Navigation = () => {
+  const { setActiveModal } = useModalContext();
+  
   return (
     <nav className="text-primary-50 m-auto flex justify-between items-center max-w-[90rem] px-24 text-lg/8 font-light">
       <a className="flex items-center gap-x-3" href="#">
@@ -20,7 +23,10 @@ const Navigation = () => {
       </ul>
       <div className="flex items-center gap-x-3">
         <button className="border-primary-50 transition-properties hover:bg-primary-50 hover:text-primary-1300 box-border cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal">Login</button>
-        <button className="bg-primary-500 border-primary-500 text-primary-1300 transition-properties hover:bg-primary-50 hover:border-primary-50 box-border cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal primary-glow primary-glow-hover">Get Started</button>
+        <button
+          className="bg-primary-500 border-primary-500 text-primary-1300 transition-properties hover:bg-primary-50 hover:border-primary-50 box-border cursor-pointer rounded-full border-2 px-8 py-3.5 text-lg/8 font-normal primary-glow primary-glow-hover"
+          onClick={() => setActiveModal("sign-up")}
+        >Get Started</button>
       </div>
     </nav>
   )
