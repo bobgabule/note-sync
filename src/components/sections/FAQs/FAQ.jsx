@@ -16,10 +16,10 @@ const FAQ = ({ question, activeQuestion, handleQuestionClick }) => {
         className="flex w-full cursor-pointer items-center"
         onClick={() => handleQuestionClick( question.id )}
       >
-        <div className="border-primary-50 mr-6 rounded-xl p-3.5 border-2">
+        <div className="border-primary-50 mr-6 rounded-xl p-3.5 border-2 max-sm:mr-4 max-sm:p-3">
           <question.Icon width={2} className="stroke-primary-50" alt="question.alt" />
         </div>
-        <p className="text-primary-50 mr-auto pr-4 text-left text-xl/loose font-medium tracking-tight">{question.question}</p>
+        <p className="text-primary-50 mr-auto pr-4 text-left text-xl/loose font-medium tracking-tight max-lg:text-lg/8 max-lg:font-semibold max-sm:text-base/6 max-sm:font-medium">{question.question}</p>
         <div className="flex h-12 w-12 shrink-0 items-center justify-center">
           <CaretUp
             className="stroke-primary-50"
@@ -31,7 +31,7 @@ const FAQ = ({ question, activeQuestion, handleQuestionClick }) => {
       </button>
 
       <motion.p
-        className="text-primary-100 pt-0 pr-14 pl-20 text-lg/8 font-light"
+        className="text-primary-100 pt-0 pr-14 pl-20 text-lg/8 font-light max-lg:text-base/loose max-lg:pl-16 max-lg:pr-12 max-sm:px-0"
         initial={{ maxHeight: 0, opacity: 0, visibility: "hidden" }}
         animate={
           activeQuestion === question.id
