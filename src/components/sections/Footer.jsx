@@ -9,11 +9,12 @@ export default function Footer() {
           <a className="flex items-center gap-x-3 max-md:gap-x-2" href="#">
             <Logo
               className="stroke-primary-500 h-6"
-              alt="NoteFlow Logo Icon"
+              alt="NoteSync Logo Icon"
               width={5}
             />
             <p className="text-primary-50 text-xl font-bold tracking-tight max-md:text-lg/8 max-md:tracking-tighter">
-              NoteFlow
+              Note
+              <span className="text-primary-500">Sync</span>
             </p>
           </a>
         </div>
