@@ -24,7 +24,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with React.js, styled with TailwindCSS and Framer Motion, this SaaS Landing App lets users browse trending movies, search titles, and explore content using the TMDB API. It features a responsive layout and a sleek, modern design.
+Built with React.js, styled with TailwindCSS and Framer Motion, this SaaS Landing App lets users browse the product, testimonials & FAQs
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
