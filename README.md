@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://bobgabule.github.io/react-note-sync/" target="_blank">
-      <img src="public/readme/landing.png" alt="Project Banner">
+      <img src="public/assets/readme/landing.png" alt="Project Banner">
     </a>  
   <br />
   
